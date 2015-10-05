@@ -16,8 +16,59 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // 设置窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    
+    // tabBarController
+    UITabBarController *tabVC = [[UITabBarController alloc] init];
+    self.window.rootViewController = tabVC;
+    
+    // 设置tabBarItem 控制器
+    UIViewController *home = [[UIViewController alloc] init];
+    home.view.backgroundColor = [UIColor yellowColor];
+//    home.tabBarItem.title = @"首页";
+//    home.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
+//    // 选中的图片，按照原来的样子显示，不要渲染成其他的颜色，比如说蓝色
+//    home.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_home_highlighted"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    // 设置选中的文字显示
+//    NSMutableDictionary *titleAttribute = [NSMutableDictionary dictionary];
+//    titleAttribute[NSForegroundColorAttributeName] = [UIColor orangeColor];
+//    [home.tabBarItem setTitleTextAttributes:titleAttribute forState:UIControlStateSelected];
+    [self addChildController:home title:@"首页" image:@"tabbar_home" andSelectedImage:@"tabbar_home_highlighted"];
+    
+    UIViewController *message = [[UIViewController alloc] init];
+    message.view.backgroundColor = [UIColor blueColor];
+    [self addChildController:message title:@"消息" image:@"tabbar_message_center" andSelectedImage:@"tabbar_message_center_highlighted"];
+    
+    UIViewController *discover = [[UIViewController alloc] init];
+    discover.view.backgroundColor = [UIColor purpleColor];
+
+    [self addChildController:discover title:@"发现" image:@"tabbar_discover" andSelectedImage:@"tabbar_discover_highlighted"];
+    
+    UIViewController *profile = [[UIViewController alloc] init];
+    profile.view.backgroundColor = [UIColor cyanColor];
+    [self addChildController:profile title:@"我" image:@"tabbar_profile" andSelectedImage:@"tabbar_profile_highlighted"];
+    // 添加到tabBar
+    [tabVC addChildViewController:home];
+    [tabVC addChildViewController:message];
+    [tabVC addChildViewController:discover];
+    [tabVC addChildViewController:profile];
+    
+
     return YES;
+}
+- (void)addChildController:(UIViewController *)childController title:(NSString *)title image:(NSString *)image andSelectedImage:(NSString *)selectedImage{
+
+    // 设置tabBarItem 控制器
+    childController.tabBarItem.title = title;
+    childController.tabBarItem.image = [UIImage imageNamed:image];
+    // 选中的图片，按照原来的样子显示，不要渲染成其他的颜色，比如说蓝色
+    childController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    // 设置选中的文字显示
+    NSMutableDictionary *titleAttribute = [NSMutableDictionary dictionary];
+    titleAttribute[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    [childController.tabBarItem setTitleTextAttributes:titleAttribute forState:UIControlStateSelected];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
