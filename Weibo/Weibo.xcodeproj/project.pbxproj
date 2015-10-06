@@ -10,6 +10,12 @@
 		0D3EB18C1BC2248B00DA6A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EB18B1BC2248B00DA6A5E /* main.m */; };
 		0D3EB18F1BC2248B00DA6A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EB18E1BC2248B00DA6A5E /* AppDelegate.m */; };
 		0D3EB1971BC2248B00DA6A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EB1961BC2248B00DA6A5E /* Assets.xcassets */; };
+		0D559BEA1BC393CE00B4F3F1 /* JDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D559BE91BC393CE00B4F3F1 /* JDTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		0D559BED1BC3976000B4F3F1 /* JDDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D559BEC1BC3976000B4F3F1 /* JDDiscoverController.m */; settings = {ASSET_TAGS = (); }; };
+		0D559BF01BC397C700B4F3F1 /* JDHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D559BEF1BC397C700B4F3F1 /* JDHomeController.m */; settings = {ASSET_TAGS = (); }; };
+		0D559BF31BC397E200B4F3F1 /* JDMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D559BF21BC397E200B4F3F1 /* JDMessageController.m */; settings = {ASSET_TAGS = (); }; };
+		0D559BF61BC397FB00B4F3F1 /* JDProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D559BF51BC397FB00B4F3F1 /* JDProfileController.m */; settings = {ASSET_TAGS = (); }; };
+		0D559BF91BC39EDE00B4F3F1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D559BF81BC39EDE00B4F3F1 /* Storyboard.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,17 @@
 		0D3EB18E1BC2248B00DA6A5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0D3EB1961BC2248B00DA6A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D3EB19B1BC2248B00DA6A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D559BE81BC393CE00B4F3F1 /* JDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTabBarController.h; sourceTree = "<group>"; };
+		0D559BE91BC393CE00B4F3F1 /* JDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTabBarController.m; sourceTree = "<group>"; };
+		0D559BEB1BC3976000B4F3F1 /* JDDiscoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDiscoverController.h; sourceTree = "<group>"; };
+		0D559BEC1BC3976000B4F3F1 /* JDDiscoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDiscoverController.m; sourceTree = "<group>"; };
+		0D559BEE1BC397C700B4F3F1 /* JDHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDHomeController.h; sourceTree = "<group>"; };
+		0D559BEF1BC397C700B4F3F1 /* JDHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDHomeController.m; sourceTree = "<group>"; };
+		0D559BF11BC397E200B4F3F1 /* JDMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMessageController.h; sourceTree = "<group>"; };
+		0D559BF21BC397E200B4F3F1 /* JDMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMessageController.m; sourceTree = "<group>"; };
+		0D559BF41BC397FB00B4F3F1 /* JDProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDProfileController.h; sourceTree = "<group>"; };
+		0D559BF51BC397FB00B4F3F1 /* JDProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDProfileController.m; sourceTree = "<group>"; };
+		0D559BF81BC39EDE00B4F3F1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				0D3EB1A11BC235B500DA6A5E /* Classes */,
+				0D559BF71BC39EC200B4F3F1 /* Test */,
 				0D3EB18D1BC2248B00DA6A5E /* AppDelegate.h */,
 				0D3EB18E1BC2248B00DA6A5E /* AppDelegate.m */,
 				0D3EB1961BC2248B00DA6A5E /* Assets.xcassets */,
@@ -82,6 +100,8 @@
 		0D3EB1A21BC235B500DA6A5E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0D559BE81BC393CE00B4F3F1 /* JDTabBarController.h */,
+				0D559BE91BC393CE00B4F3F1 /* JDTabBarController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -89,9 +109,9 @@
 		0D3EB1A31BC235B500DA6A5E /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				0D3EB1A41BC235B500DA6A5E /* Discover */,
 				0D3EB1A81BC235B500DA6A5E /* Home */,
 				0D3EB1AC1BC235B500DA6A5E /* Message */,
+				0D3EB1A41BC235B500DA6A5E /* Discover */,
 				0D3EB1B01BC235B500DA6A5E /* Profile */,
 			);
 			path = Module;
@@ -110,6 +130,8 @@
 		0D3EB1A51BC235B500DA6A5E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0D559BEB1BC3976000B4F3F1 /* JDDiscoverController.h */,
+				0D559BEC1BC3976000B4F3F1 /* JDDiscoverController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +163,8 @@
 		0D3EB1A91BC235B500DA6A5E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0D559BEE1BC397C700B4F3F1 /* JDHomeController.h */,
+				0D559BEF1BC397C700B4F3F1 /* JDHomeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +196,8 @@
 		0D3EB1AD1BC235B500DA6A5E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0D559BF11BC397E200B4F3F1 /* JDMessageController.h */,
+				0D559BF21BC397E200B4F3F1 /* JDMessageController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +229,8 @@
 		0D3EB1B11BC235B500DA6A5E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0D559BF41BC397FB00B4F3F1 /* JDProfileController.h */,
+				0D559BF51BC397FB00B4F3F1 /* JDProfileController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +254,15 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		0D559BF71BC39EC200B4F3F1 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0D559BF81BC39EDE00B4F3F1 /* Storyboard.storyboard */,
+			);
+			name = Test;
+			path = Classes/Module/Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +296,7 @@
 				TargetAttributes = {
 					0D3EB1861BC2248B00DA6A5E = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4T8P874QT5;
 					};
 				};
 			};
@@ -286,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3EB1971BC2248B00DA6A5E /* Assets.xcassets in Resources */,
+				0D559BF91BC39EDE00B4F3F1 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3EB18F1BC2248B00DA6A5E /* AppDelegate.m in Sources */,
+				0D559BF31BC397E200B4F3F1 /* JDMessageController.m in Sources */,
+				0D559BF61BC397FB00B4F3F1 /* JDProfileController.m in Sources */,
+				0D559BEA1BC393CE00B4F3F1 /* JDTabBarController.m in Sources */,
+				0D559BF01BC397C700B4F3F1 /* JDHomeController.m in Sources */,
+				0D559BED1BC3976000B4F3F1 /* JDDiscoverController.m in Sources */,
 				0D3EB18C1BC2248B00DA6A5E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.NeXT.Weibo;
@@ -401,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.NeXT.Weibo;
