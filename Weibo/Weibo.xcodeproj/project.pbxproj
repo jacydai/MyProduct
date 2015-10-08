@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D3BD55C1BC603F20034CAE7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD55B1BC603F20034CAE7 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
-		0D3BD55F1BC60D650034CAE7 /* JDBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD55E1BC60D650034CAE7 /* JDBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
+		0D3BD5621BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD5611BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		0D3BD5651BC64DF80034CAE7 /* JDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD5641BC64DF80034CAE7 /* JDNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		0D3EB18C1BC2248B00DA6A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EB18B1BC2248B00DA6A5E /* main.m */; };
 		0D3EB18F1BC2248B00DA6A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EB18E1BC2248B00DA6A5E /* AppDelegate.m */; };
 		0D3EB1971BC2248B00DA6A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EB1961BC2248B00DA6A5E /* Assets.xcassets */; };
@@ -26,8 +27,10 @@
 /* Begin PBXFileReference section */
 		0D3BD55A1BC603F20034CAE7 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		0D3BD55B1BC603F20034CAE7 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		0D3BD55D1BC60D650034CAE7 /* JDBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBarButtonItem.h; sourceTree = "<group>"; };
-		0D3BD55E1BC60D650034CAE7 /* JDBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBarButtonItem.m; sourceTree = "<group>"; };
+		0D3BD5601BC64CDB0034CAE7 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		0D3BD5611BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		0D3BD5631BC64DF80034CAE7 /* JDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNavigationController.h; sourceTree = "<group>"; };
+		0D3BD5641BC64DF80034CAE7 /* JDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNavigationController.m; sourceTree = "<group>"; };
 		0D3EB1871BC2248B00DA6A5E /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3EB18B1BC2248B00DA6A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D3EB18D1BC2248B00DA6A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,8 +72,21 @@
 			children = (
 				0D3BD55A1BC603F20034CAE7 /* UIView+Frame.h */,
 				0D3BD55B1BC603F20034CAE7 /* UIView+Frame.m */,
+				0D3BD5601BC64CDB0034CAE7 /* UIBarButtonItem+Extension.h */,
+				0D3BD5611BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		0D3BD5661BC656CA0034CAE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D559BE81BC393CE00B4F3F1 /* JDTabBarController.h */,
+				0D559BE91BC393CE00B4F3F1 /* JDTabBarController.m */,
+				0D3BD5631BC64DF80034CAE7 /* JDNavigationController.h */,
+				0D3BD5641BC64DF80034CAE7 /* JDNavigationController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		0D3EB17E1BC2248B00DA6A5E = {
@@ -125,10 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				0D3BD5591BC603CC0034CAE7 /* Categories */,
-				0D559BE81BC393CE00B4F3F1 /* JDTabBarController.h */,
-				0D559BE91BC393CE00B4F3F1 /* JDTabBarController.m */,
-				0D3BD55D1BC60D650034CAE7 /* JDBarButtonItem.h */,
-				0D3BD55E1BC60D650034CAE7 /* JDBarButtonItem.m */,
+				0D3BD5661BC656CA0034CAE7 /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -374,10 +387,11 @@
 				0D559C021BC411F900B4F3F1 /* Test2ViewController.m in Sources */,
 				0D559BEA1BC393CE00B4F3F1 /* JDTabBarController.m in Sources */,
 				0D559BF01BC397C700B4F3F1 /* JDHomeController.m in Sources */,
-				0D3BD55F1BC60D650034CAE7 /* JDBarButtonItem.m in Sources */,
 				0D559BED1BC3976000B4F3F1 /* JDDiscoverController.m in Sources */,
 				0D559BFF1BC411E600B4F3F1 /* TestViewController.m in Sources */,
+				0D3BD5651BC64DF80034CAE7 /* JDNavigationController.m in Sources */,
 				0D559C051BC4120600B4F3F1 /* Test3ViewController.m in Sources */,
+				0D3BD5621BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m in Sources */,
 				0D3EB18C1BC2248B00DA6A5E /* main.m in Sources */,
 				0D3BD55C1BC603F20034CAE7 /* UIView+Frame.m in Sources */,
 			);

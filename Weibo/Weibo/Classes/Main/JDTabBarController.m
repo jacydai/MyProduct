@@ -7,6 +7,7 @@
 //
 
 #import "JDTabBarController.h"
+#import "JDNavigationController.h"
 #import "JDHomeController.h"
 #import "JDMessageController.h"
 #import "JDDiscoverController.h"
@@ -51,7 +52,7 @@
     NSMutableDictionary *titleAttribute = [NSMutableDictionary dictionary];
     titleAttribute[NSForegroundColorAttributeName] = [UIColor orangeColor];
     [childController.tabBarItem setTitleTextAttributes:titleAttribute forState:UIControlStateSelected];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:childController];
+    JDNavigationController *nav = [[JDNavigationController alloc] initWithRootViewController:childController];
 
     [self addChildViewController:nav];
 }

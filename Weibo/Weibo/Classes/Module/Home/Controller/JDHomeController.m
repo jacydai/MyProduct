@@ -7,17 +7,22 @@
 //
 
 #import "JDHomeController.h"
+#import "UIBarButtonItem+Extension.h"
 
 @implementation JDHomeController
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.navigationItem.leftBarButtonItem.title  = @"联系人";
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemTarget:self action:@selector(friendsSearch) image:@"navigationbar_friendsearch" highlightImage:@"navigationbar_friendsearch_highlighted"];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemTarget:self action:@selector(scan) image:@"navigationbar_pop" highlightImage:@"navigationbar_pop_highlighted"];
 }
-- (void)viewWillAppear:(BOOL)animated {
 
-    [super viewWillAppear:animated];
+- (void)friendsSearch {
 
-   
+    NSLog(@"frinedsSearch");
+}
+- (void)scan {
+
+    NSLog(@"scan");
 }
 @end
