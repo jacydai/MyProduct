@@ -9,5 +9,15 @@
 #import "JDHomeController.h"
 
 @implementation JDHomeController
+- (void)viewDidLoad {
+    [super viewDidLoad];
 
+    self.navigationItem.leftBarButtonItem.title  = @"联系人";
+}
+- (void)viewWillAppear:(BOOL)animated {
+
+    [super viewWillAppear:animated];
+
+   
+}
 @end

@@ -7,6 +7,10 @@
 //
 
 #import "JDTabBarController.h"
+#import "JDHomeController.h"
+#import "JDMessageController.h"
+#import "JDDiscoverController.h"
+#import "JDProfileController.h"
 
 @implementation JDTabBarController
 
@@ -14,38 +18,31 @@
 
     [super viewDidLoad];
     // 设置tabBarItem 控制器
-    UIViewController *home = [[UIViewController alloc] init];
-    home.view.backgroundColor = [UIColor yellowColor];
+    JDHomeController *home = [[JDHomeController alloc] init];
     [self addChildController:home title:@"首页" image:@"tabbar_home" andSelectedImage:@"tabbar_home_highlighted"];
-    UINavigationController *navHome = [[UINavigationController alloc] initWithRootViewController:home];
-    
-    UIViewController *message = [[UIViewController alloc] init];
-    message.view.backgroundColor = [UIColor blueColor];
-    [self addChildController:message title:@"消息" image:@"tabbar_message_center" andSelectedImage:@"tabbar_message_center_highlighted"];
-    UINavigationController *navMessage = [[UINavigationController alloc] initWithRootViewController:message];
-    
-    UIViewController *discover = [[UIViewController alloc] init];
-    discover.view.backgroundColor = [UIColor purpleColor];
-    [self addChildController:discover title:@"发现" image:@"tabbar_discover" andSelectedImage:@"tabbar_discover_highlighted"];
-    UINavigationController *navDiscover = [[UINavigationController alloc] initWithRootViewController:discover];
 
-    UIViewController *profile = [[UIViewController alloc] init];
-    profile.view.backgroundColor = [UIColor cyanColor];
-    [self addChildController:profile title:@"我" image:@"tabbar_profile" andSelectedImage:@"tabbar_profile_highlighted"];
-    UINavigationController *navProfile = [[UINavigationController alloc] initWithRootViewController:profile];
-    // 添加控制器到tabBar
-    [self addChildViewController:navHome];
-    [self addChildViewController:navMessage];
-    [self addChildViewController:navDiscover];
-    [self addChildViewController:navProfile];
+    JDMessageController *message = [[JDMessageController alloc] init];
+    [self addChildController:message title:@"消息" image:@"tabbar_message_center" andSelectedImage:@"tabbar_message_center_highlighted"];
     
+    JDDiscoverController *discover = [[JDDiscoverController alloc] init];
+    [self addChildController:discover title:@"发现" image:@"tabbar_discover" andSelectedImage:@"tabbar_discover_highlighted"];
+    
+    JDProfileController *profile = [[JDProfileController alloc] init];
+    [self addChildController:profile title:@"我" image:@"tabbar_profile" andSelectedImage:@"tabbar_profile_highlighted"];
 }
 
+/// 添加子控制器
+///
+/// @param childController 子控制器
+/// @param title           tabBaritem标题和导航栏标题
+/// @param image           image
+/// @param selectedImage   选中图片
 - (void)addChildController:(UIViewController *)childController title:(NSString *)title image:(NSString *)image andSelectedImage:(NSString *)selectedImage{
     
     // 设置tabBarItem 控制器
-//    childController.tabBarItem.title = title;
-//    childController.navigationItem.title = title;
+    // childController.tabBarItem.title = title;
+    // childController.navigationItem.title = title;
+    // 对于控制器的tabbarItem 和 navigationItem 设置标题和对控制器设置标题是等价的
     childController.title = title;
     childController.tabBarItem.image = [UIImage imageNamed:image];
     // 选中的图片，按照原来的样子显示，不要渲染成其他的颜色，比如说蓝色
@@ -54,7 +51,9 @@
     NSMutableDictionary *titleAttribute = [NSMutableDictionary dictionary];
     titleAttribute[NSForegroundColorAttributeName] = [UIColor orangeColor];
     [childController.tabBarItem setTitleTextAttributes:titleAttribute forState:UIControlStateSelected];
-//    UINavigationController *nav = [[UINavigationController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:childController];
+
+    [self addChildViewController:nav];
 }
 
 @end

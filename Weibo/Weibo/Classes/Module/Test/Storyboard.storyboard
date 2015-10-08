@@ -2,9 +2,10 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--aa-->
         <scene sceneID="cUf-MI-7ok">
             <objects>
                 <viewController id="BXS-Nq-Yb4" sceneMemberID="viewController">
@@ -18,7 +19,15 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WWo-0H-r2Y"/>
+                    <navigationItem key="navigationItem" title="aa" prompt="da" id="WWo-0H-r2Y">
+                        <barButtonItem key="backBarButtonItem" title="back" id="QX4-bz-Trl"/>
+                        <barButtonItem key="leftBarButtonItem" title="left" id="0m9-Ka-iXx"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="right" id="jNd-ki-DC5"/>
+                            <barButtonItem title="right0" id="mVq-rp-rdq"/>
+                            <barButtonItem title="right1" id="FmP-gj-wJO"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKK-Mr-Kt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
