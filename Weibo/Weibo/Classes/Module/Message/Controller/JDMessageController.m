@@ -17,12 +17,11 @@
     [self.tableView registerClass:UITableViewCell.self forCellReuseIdentifier:@"messageCell"];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"写私信" style:UIBarButtonItemStylePlain target:self action:@selector(compose)];
-}
-- (void)viewWillAppear:(BOOL)animated {
-
-    [super viewWillAppear:animated];
     self.navigationItem.rightBarButtonItem.enabled = NO;
+
+
 }
+
 - (void)compose {
 
     NSLog(@"compse");

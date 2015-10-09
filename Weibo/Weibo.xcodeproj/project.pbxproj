@@ -31,6 +31,7 @@
 		0D3BD5611BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		0D3BD5631BC64DF80034CAE7 /* JDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNavigationController.h; sourceTree = "<group>"; };
 		0D3BD5641BC64DF80034CAE7 /* JDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNavigationController.m; sourceTree = "<group>"; };
+		0D3BD5671BC66EE50034CAE7 /* Weibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weibo.pch; sourceTree = "<group>"; };
 		0D3EB1871BC2248B00DA6A5E /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3EB18B1BC2248B00DA6A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D3EB18D1BC2248B00DA6A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,11 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				0D3EB1A11BC235B500DA6A5E /* Classes */,
-				0D559BF71BC39EC200B4F3F1 /* Test */,
 				0D3EB18D1BC2248B00DA6A5E /* AppDelegate.h */,
 				0D3EB18E1BC2248B00DA6A5E /* AppDelegate.m */,
 				0D3EB1961BC2248B00DA6A5E /* Assets.xcassets */,
-				0D3EB19B1BC2248B00DA6A5E /* Info.plist */,
 				0D3EB18A1BC2248B00DA6A5E /* Supporting Files */,
 			);
 			path = Weibo;
@@ -122,6 +121,8 @@
 		0D3EB18A1BC2248B00DA6A5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0D3EB19B1BC2248B00DA6A5E /* Info.plist */,
+				0D3BD5671BC66EE50034CAE7 /* Weibo.pch */,
 				0D3EB18B1BC2248B00DA6A5E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -153,6 +154,7 @@
 				0D3EB1AC1BC235B500DA6A5E /* Message */,
 				0D3EB1A41BC235B500DA6A5E /* Discover */,
 				0D3EB1B01BC235B500DA6A5E /* Profile */,
+				0D559BF71BC39EC200B4F3F1 /* Test */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -307,8 +309,7 @@
 				0D559C031BC4120600B4F3F1 /* Test3ViewController.h */,
 				0D559C041BC4120600B4F3F1 /* Test3ViewController.m */,
 			);
-			name = Test;
-			path = Classes/Module/Test;
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
