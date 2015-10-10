@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0858B41BC78B22008ADBAF /* JDSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0858B31BC78B22008ADBAF /* JDSearchBar.m */; settings = {ASSET_TAGS = (); }; };
 		0D3BD55C1BC603F20034CAE7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD55B1BC603F20034CAE7 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
 		0D3BD5621BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD5611BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		0D3BD5651BC64DF80034CAE7 /* JDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD5641BC64DF80034CAE7 /* JDNavigationController.m */; settings = {ASSET_TAGS = (); }; };
@@ -22,16 +23,20 @@
 		0D559BFF1BC411E600B4F3F1 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D559BFE1BC411E600B4F3F1 /* TestViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0D559C021BC411F900B4F3F1 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D559C011BC411F900B4F3F1 /* Test2ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0D559C051BC4120600B4F3F1 /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D559C041BC4120600B4F3F1 /* Test3ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0DBE48F21BC8BBD500233ADB /* JDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBE48F11BC8BBD500233ADB /* JDTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0DBE48F51BC901FB00233ADB /* JDDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBE48F41BC901FB00233ADB /* JDDropdownMenu.m */; settings = {ASSET_TAGS = (); }; };
+		0DBE48FE1BC9032400233ADB /* UIButton+TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBE48FD1BC9032400233ADB /* UIButton+TitleView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0858B21BC78B22008ADBAF /* JDSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSearchBar.h; sourceTree = "<group>"; };
+		0D0858B31BC78B22008ADBAF /* JDSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSearchBar.m; sourceTree = "<group>"; };
 		0D3BD55A1BC603F20034CAE7 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		0D3BD55B1BC603F20034CAE7 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		0D3BD5601BC64CDB0034CAE7 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		0D3BD5611BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		0D3BD5631BC64DF80034CAE7 /* JDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNavigationController.h; sourceTree = "<group>"; };
 		0D3BD5641BC64DF80034CAE7 /* JDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNavigationController.m; sourceTree = "<group>"; };
-		0D3BD5671BC66EE50034CAE7 /* Weibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weibo.pch; sourceTree = "<group>"; };
 		0D3EB1871BC2248B00DA6A5E /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3EB18B1BC2248B00DA6A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D3EB18D1BC2248B00DA6A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +60,12 @@
 		0D559C011BC411F900B4F3F1 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
 		0D559C031BC4120600B4F3F1 /* Test3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test3ViewController.h; sourceTree = "<group>"; };
 		0D559C041BC4120600B4F3F1 /* Test3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test3ViewController.m; sourceTree = "<group>"; };
+		0DBE48F01BC8BBD500233ADB /* JDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTableViewController.h; sourceTree = "<group>"; };
+		0DBE48F11BC8BBD500233ADB /* JDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDTableViewController.m; sourceTree = "<group>"; };
+		0DBE48F31BC901FB00233ADB /* JDDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDropdownMenu.h; sourceTree = "<group>"; };
+		0DBE48F41BC901FB00233ADB /* JDDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDropdownMenu.m; sourceTree = "<group>"; };
+		0DBE48FC1BC9032400233ADB /* UIButton+TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TitleView.h"; sourceTree = "<group>"; };
+		0DBE48FD1BC9032400233ADB /* UIButton+TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TitleView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +79,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0858B11BC78AE5008ADBAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D0858B21BC78B22008ADBAF /* JDSearchBar.h */,
+				0D0858B31BC78B22008ADBAF /* JDSearchBar.m */,
+				0DBE48F31BC901FB00233ADB /* JDDropdownMenu.h */,
+				0DBE48F41BC901FB00233ADB /* JDDropdownMenu.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		0D3BD5591BC603CC0034CAE7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +97,8 @@
 				0D3BD55B1BC603F20034CAE7 /* UIView+Frame.m */,
 				0D3BD5601BC64CDB0034CAE7 /* UIBarButtonItem+Extension.h */,
 				0D3BD5611BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m */,
+				0DBE48FC1BC9032400233ADB /* UIButton+TitleView.h */,
+				0DBE48FD1BC9032400233ADB /* UIButton+TitleView.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -122,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				0D3EB19B1BC2248B00DA6A5E /* Info.plist */,
-				0D3BD5671BC66EE50034CAE7 /* Weibo.pch */,
 				0D3EB18B1BC2248B00DA6A5E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -143,6 +166,7 @@
 			children = (
 				0D3BD5591BC603CC0034CAE7 /* Categories */,
 				0D3BD5661BC656CA0034CAE7 /* Controller */,
+				0D0858B11BC78AE5008ADBAF /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -207,6 +231,8 @@
 			children = (
 				0D559BEE1BC397C700B4F3F1 /* JDHomeController.h */,
 				0D559BEF1BC397C700B4F3F1 /* JDHomeController.m */,
+				0DBE48F01BC8BBD500233ADB /* JDTableViewController.h */,
+				0DBE48F11BC8BBD500233ADB /* JDTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -387,11 +413,15 @@
 				0D559BF61BC397FB00B4F3F1 /* JDProfileController.m in Sources */,
 				0D559C021BC411F900B4F3F1 /* Test2ViewController.m in Sources */,
 				0D559BEA1BC393CE00B4F3F1 /* JDTabBarController.m in Sources */,
+				0DBE48FE1BC9032400233ADB /* UIButton+TitleView.m in Sources */,
 				0D559BF01BC397C700B4F3F1 /* JDHomeController.m in Sources */,
 				0D559BED1BC3976000B4F3F1 /* JDDiscoverController.m in Sources */,
 				0D559BFF1BC411E600B4F3F1 /* TestViewController.m in Sources */,
 				0D3BD5651BC64DF80034CAE7 /* JDNavigationController.m in Sources */,
+				0D0858B41BC78B22008ADBAF /* JDSearchBar.m in Sources */,
 				0D559C051BC4120600B4F3F1 /* Test3ViewController.m in Sources */,
+				0DBE48F51BC901FB00233ADB /* JDDropdownMenu.m in Sources */,
+				0DBE48F21BC8BBD500233ADB /* JDTableViewController.m in Sources */,
 				0D3BD5621BC64CDB0034CAE7 /* UIBarButtonItem+Extension.m in Sources */,
 				0D3EB18C1BC2248B00DA6A5E /* main.m in Sources */,
 				0D3BD55C1BC603F20034CAE7 /* UIView+Frame.m in Sources */,
@@ -487,6 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.NeXT.Weibo;
@@ -500,6 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.NeXT.Weibo;
